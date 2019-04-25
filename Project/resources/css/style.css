@@ -1,0 +1,336 @@
+/*---------------------BODY----------------------------*/
+body {
+	
+}
+@media only screen and (max-width: 768px) {
+	/*mobile*/
+	.desktop {
+		display: none;
+	}
+}
+@media only screen and (min-width: 769px) {
+	/*desktop*/
+	.mobile {
+		display: none;
+	}
+}
+
+/*---------------------TEXT----------------------------*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #383838;
+}
+h1 {
+	font-weight: 600;
+}
+header .desktop .logo h1 .academy {
+	color: #808080;
+	font-weight: normal;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 800;
+}
+h3 {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+h4 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+a {
+	font-size: 1rem;
+	text-decoration: none;
+	color: #4ba3f4;
+}
+header .desktop .nav-menu a {
+	text-decoration: none;
+	color: black;
+}
+button {
+	color: white;
+}
+/*---------------------HEADER--------------------------*/
+header .mobile,
+header .desktop {
+	height: 64px;
+}
+@media only screen and (max-width: 768px) {
+	/*mobile*/
+	header .mobile {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+@media only screen and (min-width: 769px) {
+	/*desktop*/
+	header .desktop {
+		max-width: 1024px;
+		margin: auto;
+		padding: 0 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	header .desktop .logo {
+		display: flex;
+		align-items: center;
+	}
+	header .desktop .nav-menu a {
+		padding-left: 16px;
+	}
+}
+
+/*---------------------MAIN----------------------------*/
+main {
+	background-color: #DCDCDC;
+}
+main .container img {
+	width: 100%;
+}
+main .container .right-column .text h3 {
+	padding: 32px 0 24px 0;
+}
+main .container .right-column .text button {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	background-color: #383838;
+}
+@media only screen and (max-width: 768px) {
+	/*mobile*/
+	main .container .right-column {
+		padding: 32px 16px;
+	}
+}
+@media only screen and (min-width: 769px) {
+	/*desktop*/
+	main {
+		padding: 32px 24px;
+	}
+	main .container {
+		max-width: 1024px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+	}
+	main .container .left-column {
+		width: 60%;
+		padding-right: 24px;
+	}
+	main .container .left-column img {
+		width: 100%;
+	}
+	main .container .right-column {
+		width: 40%;
+		padding: 0 12px;
+	}
+}
+
+/*---------------------INFORMATION---------------------*/
+.information {
+	max-width: 1024px;
+	margin: auto;
+}
+.information .right-column .text h4 {
+	padding: 8px 0;
+}
+@media only screen and (max-width: 768px) {
+	/*mobile*/
+	.information .right-column {
+		padding: 32px 16px 0 16px;
+		border-bottom: 1px solid #DCDCDC;
+	}
+	.information .right-column img {
+		width: 100%;
+	}
+	.information .right-column .text {
+		padding: 16px 16px 32px 16px;
+	}
+}
+@media only screen and (min-width: 769px) {
+	/*desktop*/
+	.information {
+		padding: 32px 24px;
+	}
+	.information .container {
+		max-width: 1024px;
+		margin: auto;
+		display: flex;
+	}
+	.information .container .left-column {
+		width: 60%;
+		padding-right: 24px;
+	}
+	.information .container .left-column img {
+		width: 100%;
+	}
+	.information .container .left-column .text {
+		padding: 32px 0;
+	}
+	.information .container .left-column .text p {
+		padding-top: 24px;
+	}
+	.information .container .right-column {
+		width: 40%;
+		padding: 0 12px;
+		border-left: 1px solid #DCDCDC;
+	}
+	.information .container .right-column .box {
+		display: flex;
+		align-items: center; 
+		border-bottom: 1px solid #DCDCDC;
+	}
+	.information .container .right-column .guest {
+		background-color: #DCDCDC;
+	}
+	.information .container .right-column .box img {
+		width: 35%;
+		padding: 12px;
+	}
+}
+
+/*---------------------LEARNING------------------------*/
+@media only screen and (max-width: 768px) {
+	/*mobile*/
+	.start-learning .mobile {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 32px;
+		border-bottom: 1px solid #DCDCDC;
+	}
+	.start-learning .mobile h2 {
+		margin: auto;
+		padding: 32px 0 16px 0;
+	}
+	.start-learning .mobile h3 {
+		padding: 24px;
+		margin-bottom: 8px;
+		background-color: #DCDCDC;
+	}
+}
+@media only screen and (min-width: 769px) {
+	/*desktop*/
+	.start-learning .desktop {
+		background-color: #DCDCDC;
+	}
+	.start-learning .desktop .container {
+		max-width: 1024px;
+		margin: auto;
+	}
+	.start-learning .desktop .container h2 {
+		padding: 32px 0 16px 0;
+		display: flex;
+		justify-content: center;
+	}
+	.start-learning .desktop .container .courses {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.start-learning .desktop .container .courses .box {
+		width: 30%;
+		padding: 16px;
+	}
+	.start-learning .desktop .container .courses .box img {
+		width: 100%;
+	}
+	.start-learning .desktop .container .courses .box .text {
+		padding: 16px;
+		background-color: white;
+	}
+	.start-learning .desktop .container .courses .box .text h4 {
+		margin: 8px 0;
+	}
+}
+
+/*---------------------THESIS--------------------------*/
+@media only screen and (max-width: 768px) {
+	/*mobile*/
+	.thesis .container {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 32px;
+	}
+	.thesis h2 {
+		text-align: center;
+		padding: 32px 0 16px 0;
+	}
+	.thesis .container .left-column video {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 769px) {
+	/*display*/
+	.thesis {
+	max-width: 1024px;
+	margin: auto;
+	padding: 0 24px 32px 24px;
+	}
+	.thesis h2 {
+		text-align: center;
+		padding: 32px;
+	}
+	.thesis .container {
+		max-width: 1024px;
+		margin: auto;
+		display: flex;
+	}
+	.thesis .container .left-column {
+		width: 60%;
+		padding-right: 24px;
+	}
+	.thesis .container .left-column video {
+		width: 100%;
+	}
+	.thesis .container .left-column .text {
+		padding: 32px 0;
+	}
+	.thesis .container .left-column .text h4 {
+		padding-top: 24px;
+	}
+	.thesis .container .right-column {
+		width: 40%;
+		padding: 0 12px;
+		border-left: 1px solid #DCDCDC;
+	}
+	.thesis .container .right-column .box {
+		display: flex;
+		align-items: center; 
+	}
+	.thesis .container .right-column .fisma {
+		background-color: #DCDCDC;
+	}
+	.thesis .container .right-column .box img {
+		width: 35%;
+		padding: 12px;
+	}
+	.thesis .right-column .text h4 {
+		padding: 8px 0;
+	}
+}
+/*---------------------FOOTER--------------------------*/
+footer {
+	padding: 16px;
+	border-top: 1px solid #DCDCDC;
+}
+@media only screen and (min-width: 769px) {
+	/*desktop*/
+	footer {
+		max-width: 1024px;
+		margin: auto;
+		padding: 32px 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	footer .nav-menu a {
+		padding-left: 16px;
+	}
+}
+
+
